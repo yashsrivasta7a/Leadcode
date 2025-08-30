@@ -1,19 +1,26 @@
-import { useState } from 'react'
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Login from './modules/login/login'
+import Navbar from './components/navbar'
+
+// You'll need to create these components or import them from the correct paths
+// import Dashboard from './components/Dashboard'
+// import Leaderboard from './components/Leaderboard'
+// import Rooms from './components/Rooms'
+// import Profile from './components/Profile'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-     
-      
-      <p className="read-the-docs">
-       leetcode and github dashboard
-      </p>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        {/* Uncomment these routes when you have the components ready */}
+        {/* <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/rooms" element={<Rooms />} />
+        <Route path="/profile" element={<Profile />} /> */}
+      </Routes>
+    </Router>
   )
 }
 
