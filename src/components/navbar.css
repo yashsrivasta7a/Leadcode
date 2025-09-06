@@ -1,9 +1,9 @@
-/* Navbar.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f172a; /* Dark navy */
+  background-color: #0e1d3f; /* Dark navy */
   padding: 12px 24px;
   color: #ffffff;
   position: sticky;
@@ -14,7 +14,7 @@
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #38bdf8; /* Sky blue */
+  color: #2e97d0d8; /* Sky blue */
 }
 
 .navbar-links {
@@ -30,11 +30,11 @@
 }
 
 .navbar-links a {
-  text-decoration: none;
+  text-decoration: solid;
   color: #ffffff;
   transition: color 0.2s ease;
 }
 
 .navbar-links a:hover {
-  color: #38bdf8; /* Highlight on hover */
+  color: #3f5e57; /* Highlight on hover */
 }

@@ -4,7 +4,6 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-            
         </div>
     );
 };
